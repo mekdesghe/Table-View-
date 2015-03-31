@@ -13,7 +13,7 @@
 		109532191ACAF70400034A42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109532181ACAF70400034A42 /* Images.xcassets */; };
 		1095321C1ACAF70400034A42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1095321A1ACAF70400034A42 /* LaunchScreen.xib */; };
 		109532281ACAF70400034A42 /* Table_ViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109532271ACAF70400034A42 /* Table_ViewTests.m */; };
-		109532331ACAF99800034A42 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109532321ACAF99800034A42 /* MyTableViewController.m */; };
+		109532361ACAFCDE00034A42 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 109532351ACAFCDE00034A42 /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		109532211ACAF70400034A42 /* Table ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		109532261ACAF70400034A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109532271ACAF70400034A42 /* Table_ViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table_ViewTests.m; sourceTree = "<group>"; };
-		109532311ACAF99800034A42 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		109532321ACAF99800034A42 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		109532341ACAFCDE00034A42 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		109532351ACAFCDE00034A42 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,6 @@
 		109531FF1ACAF70400034A42 = {
 			isa = PBXGroup;
 			children = (
-				109532311ACAF99800034A42 /* MyTableViewController.h */,
-				109532321ACAF99800034A42 /* MyTableViewController.m */,
 				1095320A1ACAF70400034A42 /* Table View */,
 				109532241ACAF70400034A42 /* Table ViewTests */,
 				109532091ACAF70400034A42 /* Products */,
@@ -86,6 +84,8 @@
 				1095320F1ACAF70400034A42 /* AppDelegate.h */,
 				109532101ACAF70400034A42 /* AppDelegate.m */,
 				109532151ACAF70400034A42 /* Main.storyboard */,
+				109532341ACAFCDE00034A42 /* MyTableViewController.h */,
+				109532351ACAFCDE00034A42 /* MyTableViewController.m */,
 				109532181ACAF70400034A42 /* Images.xcassets */,
 				1095321A1ACAF70400034A42 /* LaunchScreen.xib */,
 				1095320B1ACAF70400034A42 /* Supporting Files */,
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109532331ACAF99800034A42 /* MyTableViewController.m in Sources */,
 				109532111ACAF70400034A42 /* AppDelegate.m in Sources */,
 				1095320E1ACAF70400034A42 /* main.m in Sources */,
+				109532361ACAFCDE00034A42 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +412,7 @@
 				1095322D1ACAF70400034A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1095322E1ACAF70400034A42 /* Build configuration list for PBXNativeTarget "Table ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				109532301ACAF70400034A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,11 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,35 +28,39 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    
-    return 3
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    if (sections==0) {
+
+    if (section==0) {
         return 3;
-    }
-    else if {
+    }else if (section==1){
         return 2;
-    } else{
+    }else{
         return 1;
     }
-        
-}
+        }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
-    cell.textlabel.text=[ns]
-   
+    //cell.cell
+    //cell.textLabel.text=[NSString stringWithFormat:@"my sections : %li",(long)indexPath.row];
+    if (indexPath.section==0) {
+        cell.textLabel.text=@"I am in section 0";
+    }else if (indexPath.section==1){
+        cell.textLabel.text=@"another section";
+
+    }else{
+        
+        cell.textLabel.text=[NSString stringWithFormat:@"my sections : %li",(long)indexPath.row];
+
+}
     
     return cell;
 }
